@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 #################
 ## ENVIRONMENT ##
@@ -82,6 +81,12 @@ sed -i -e 's/''name=percona''/''app=pgset''/g' \
 -e 's/value: app-percona-ns/value: app-pgres-ns/g' \
 -e 's/value: percona-mysql-claim/value: pgdata-claim-pgset-0/g' run_postgres_ctrl_network_delay.yml
 
+sed -i '/command:/i \
+          - name: AWS_ACCESS_KEY_ID\
+            value: '"$AWS_ACCESS_KEY_ID"'\
+          - name: AWS_SECRET_ACCESS_KEY\
+            value: '"$AWS_SECRET_ACCESS_KEY"'\
+' run_postgres_ctrl_network_delay.yml
 
 #################
 ## RUNNER MAIN ##

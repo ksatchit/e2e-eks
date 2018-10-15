@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 #################
 ## ENVIRONMENT ##
@@ -86,6 +85,10 @@ sed -i -e 's/app: percona-deployment/app: percona-deployment-cstor/g' \
 sed -i '/command:/i \
           - name: RUN_ID\
             value: '"$run_metadata"'\
+          - name: AWS_ACCESS_KEY_ID\
+            value: '"$AWS_ACCESS_KEY_ID"'\
+          - name: AWS_SECRET_ACCESS_KEY\
+            value: '"$AWS_SECRET_ACCESS_KEY"'\
 ' run_cstor_litmus_test.yml
 
 #################
