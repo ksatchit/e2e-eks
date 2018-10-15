@@ -1,15 +1,15 @@
 #!/bin/bash
 set -e
 
-#git clone https://github.com/openebs/litmus.git
-#cd litmus/k8s/eks/k8s-installer/
+git clone https://github.com/openebs/litmus.git
+cd litmus/k8s/eks/k8s-installer/
 
-git clone https://github.com/yudaykiran/litmus.git
+#git clone https://github.com/yudaykiran/litmus.git
 #cd litmus/k8s/eks/k8s-installer/
-cd litmus
-git checkout eks_pipeline_test
+#cd litmus
+#git checkout eks_pipeline_test
 
-cd k8s/eks/k8s-installer
+#cd k8s/eks/k8s-installer
 
 echo "creating cluster"
 
