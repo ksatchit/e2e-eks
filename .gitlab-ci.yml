@@ -47,7 +47,6 @@ openebs-eks-deploy:
         #    paths: 
         #     - .kube-openebs/
 
-## Define the app deployer jobs
 
 ## PERCONA-JIVA
 #percona-jiva-run/load/check 0:2:
