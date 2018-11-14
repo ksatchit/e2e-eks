@@ -5,11 +5,14 @@
 stages:
   - CLUSTER-SETUP
   - PROVIDER-INFRA-SETUP
-  - STATEFUL-APP-DEPLOY
-  - APP-FUNC-TEST
-  - APP-CHAOS-TEST
+    #  - STATEFUL-APP-DEPLOY
+    #  - APP-FUNC-TEST
+    #  - APP-CHAOS-TEST
   - CLUSTER-CLEANUP
 
+
+variables: 
+  utils_path: "/openebs/e2e-gke/script/utils"
 ## Setup the kubernetes cluster
 
 eks-cluster:

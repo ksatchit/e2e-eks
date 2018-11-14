@@ -30,7 +30,6 @@ ${utils_path}/task_delimiter;
 
 echo "Setting up test dependencies.."
 ${utils_path}/setup_dependencies infra-setup 
-sudo -H pip install pyyaml --upgrade
 
 for i in efk-vars.yml efk.yml get_url.yml; do
   wget https://raw.githubusercontent.com/openebs/e2e-infrastructure/master/production/efk-client/playbook/$i
