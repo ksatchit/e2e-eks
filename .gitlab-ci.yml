@@ -12,7 +12,7 @@ stages:
 
 
 variables: 
-  utils_path: "/openebs/e2e-aks/script/utils"
+  utils_path: "/openebs/e2e-eks/script/utils"
 ## Setup the kubernetes cluster
 
 eks-cluster:
