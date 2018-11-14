@@ -25,7 +25,6 @@ eks-cluster:
     paths:
       - .kube/
 
-## Setup OpenEBS control plane
 
 openebs-eks-deploy:
   image: atulabhi/kops:v10
