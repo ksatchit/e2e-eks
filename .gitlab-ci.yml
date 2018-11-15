@@ -9,7 +9,6 @@ stages:
     #  - APP-CHAOS-TEST
   - CLUSTER-CLEANUP
 
-
 variables: 
   utils_path: "/openebs/e2e-eks/script/utils"
 ## Setup the kubernetes cluster
@@ -23,7 +22,6 @@ eks-cluster:
   artifacts:
     paths:
       - .kube/
-
 
 openebs-eks-deploy:
   image: atulabhi/kops:v10
